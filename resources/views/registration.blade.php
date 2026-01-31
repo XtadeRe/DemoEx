@@ -1,3 +1,5 @@
+@include('header')
+
 <div>
     <form action="{{route('registration.store')}}" method="POST">
         @csrf
@@ -8,5 +10,4 @@
         <button>Регистрация</button>
         <a href="{{route('login.index')}}">У меня есть аккаунт</a>
     </form>
-    {{auth()->id()}}
 </div>
